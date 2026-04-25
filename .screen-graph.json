@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "src/screens/ElementPortfolio/ElementPortfolio.tsx",
+      "label": "ElementPortfolio",
+      "routes": [
+        "/",
+        "/xl28px-u45-portfolio-template"
+      ],
+      "isRoot": true
+    },
+    {
+      "id": "src/screens/HeaderScreen/HeaderScreen.tsx",
+      "label": "HeaderScreen",
+      "routes": [
+        "/header"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "src\\screens\\ElementPortfolio\\sections\\NavigationSubsection\\Navigationsubsection.tsx:48:6-to-src\\screens\\ElementPortfolio\\ElementPortfolio.tsx",
+      "source": "src\\screens\\ElementPortfolio\\ElementPortfolio.tsx",
+      "target": "src\\screens\\ElementPortfolio\\ElementPortfolio.tsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<a\n        href=\"/\"\n        style={{\n          fontFamily: \"'Epilogue', sans-serif\",\n          fontWeight: 800,\n          fontSize: 22,\n          color: \"#f1f5f9\",\n          textDecoration: \"none\",\n          letterSpacing: \"-0.5px\",\n          lineHeight: 1,\n        }}\n      >\n        <span style={{ color: \"var(--green-primary)\" }}>JP.</span>\n      </a>",
+          "line": 48,
+          "endLine": 61,
+          "column": 6,
+          "endColumn": 10,
+          "sourceFile": "src\\screens\\ElementPortfolio\\sections\\NavigationSubsection\\Navigationsubsection.tsx"
+        }
+      }
+    }
+  ]
+}
