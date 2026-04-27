@@ -62,7 +62,7 @@ export const HeaderSubsection = (): JSX.Element => {
             Get In Touch
           </a>
           <a
-            href="https://linkedin.com/in/jaimin"
+            href="https://www.linkedin.com/in/jaimin-patel-104999244/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline"

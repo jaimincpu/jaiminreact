@@ -41,7 +41,7 @@ export const FooterSubsection = (): JSX.Element => {
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#94a3b8" }}><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>,
                 label: "LinkedIn",
                 value: "linkedin.com/in/jaimin",
-                href: "https://linkedin.com/in/jaimin",
+                href: "https://www.linkedin.com/in/jaimin-patel-104999244/",
               },
               {
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#fb7185" }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>,
@@ -75,8 +75,8 @@ export const FooterSubsection = (): JSX.Element => {
               <input type="text" placeholder="Your Name" className="form-input w-1/2" />
               <input type="email" placeholder="Your Email" className="form-input w-1/2" />
             </div>
-            <textarea 
-              placeholder="Tell me about your project..." 
+            <textarea
+              placeholder="Tell me about your project..."
               className="form-input resize-none h-[140px]"
             />
             <button type="submit" className="btn-primary w-full mt-2" style={{ padding: "15px", fontSize: "16px" }}>

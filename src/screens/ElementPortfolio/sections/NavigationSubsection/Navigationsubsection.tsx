@@ -7,10 +7,17 @@ import {
 } from "../../../../components/ui/navigation_menu";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", sectionId: "about" },
+  { label: "Work", sectionId: "work" },
+  { label: "Contact", sectionId: "contact" },
 ];
+
+const scrollToSection = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
 
 export const NavigationSubsection = (): JSX.Element => {
   const [scrolled, setScrolled] = useState(false);
@@ -68,7 +75,11 @@ export const NavigationSubsection = (): JSX.Element => {
           {navLinks.map((link) => (
             <NavigationMenuItem key={link.label}>
               <NavigationMenuLink
-                href={link.href}
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(link.sectionId);
+                }}
                 style={{
                   fontFamily: "'Space Grotesk', sans-serif",
                   fontSize: 15,
@@ -77,6 +88,7 @@ export const NavigationSubsection = (): JSX.Element => {
                   textDecoration: "none",
                   transition: "color 0.2s ease",
                   display: "block",
+                  cursor: "pointer",
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#f1f5f9")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}

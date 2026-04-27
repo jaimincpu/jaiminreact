@@ -1,8 +1,8 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { ElementPortfolio } from "./screens/ElementPortfolio";
 import { HeaderScreen } from "./screens/HeaderScreen";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <ElementPortfolio />,
